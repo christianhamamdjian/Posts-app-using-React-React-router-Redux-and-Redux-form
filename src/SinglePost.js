@@ -33,8 +33,8 @@ class SinglePost extends Component {
         <button onClick={this.handleDelete}>Delete</button>
         <ul>
           <li>
-            <h2>{selectedPost.title}</h2>
-            <h3>{selectedPost.category}</h3>
+            <h1>{selectedPost.title}</h1>
+            <h2>{selectedPost.category}</h2>
             <p>{selectedPost.content}</p>
           </li>
         </ul>

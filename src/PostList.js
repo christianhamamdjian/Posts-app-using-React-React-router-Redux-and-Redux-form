@@ -25,13 +25,17 @@ class PostList extends Component {
           <ul>
             {console.log(this.props)}
             {this.props.posts.myApp.map(post => (
-              <Link key={post.id} to={"/posts/" + post.id}>
+              <Link
+                className="post-card"
+                key={post.id}
+                to={"/posts/" + post.id}
+              >
                 {post.editing ? (
                   <EditPost post={post} key={post.id} />
                 ) : (
                   <li>
-                    <p>{post.title}</p>
-                    <p>{post.category}</p>
+                    <h1>{post.title}</h1>
+                    <h2>{post.category}</h2>
                     <p>{post.content}</p>
                   </li>
                 )}

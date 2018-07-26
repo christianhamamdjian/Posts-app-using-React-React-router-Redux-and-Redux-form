@@ -1,4 +1,0 @@
-- Styling and adding the styles to the React-redux master branch
-- Fields isnstant validation
-- Fix the if empty fields error
-- Add Redux-form to the Edit page?
