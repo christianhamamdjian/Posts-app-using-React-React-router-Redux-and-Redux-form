@@ -2,7 +2,9 @@
   "name": "redux-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://christianhamamdjian.github.io/Integrify-assignment-14-14-6-2018/",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "@types/react-redux": "^6.0.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
@@ -16,6 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   }
 }
