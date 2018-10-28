@@ -1,13 +1,5 @@
 import React, { Component } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  NavLink,
-  Redirect,
-  Prompt,
-  Switch
-} from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./App.css";
 import { connect } from "react-redux";
 import EditPost from "./EditPost";

@@ -1,13 +1,5 @@
 import React, { Component } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  NavLink,
-  Redirect,
-  Prompt,
-  Switch
-} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./App.css";
 import { connect } from "react-redux";
 import { Field, reduxForm } from "redux-form";
@@ -27,14 +19,6 @@ const validate = values => {
 
   return errors;
 };
-
-// const warn = values => {
-//   const warnings = {};
-//   if (values.title.length < 4) {
-//     warnings.title = "Your title is too short!";
-//   }
-//   return warnings;
-// };
 
 const renderField = ({
   input,
@@ -71,7 +55,6 @@ class NewPost extends Component {
   };
 
   render() {
-    const { handleSubmit, pristine, reset, submitting } = this.props;
     return (
       <div className="container">
         <form onSubmit={this.handleSave}>
