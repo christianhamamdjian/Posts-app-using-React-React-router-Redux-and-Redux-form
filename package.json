@@ -2,7 +2,7 @@
   "name": "redux-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://christianhamamdjian.github.io/Integrify-assignment-16-05-7-2018/",
+  "homepage": "https://christianhamamdjian.github.io/Integrify-assignment-16-05-7-2018-Redux-form/",
   "dependencies": {
     "@types/react-redux": "^6.0.3",
     "gh-pages": "^2.0.1",
