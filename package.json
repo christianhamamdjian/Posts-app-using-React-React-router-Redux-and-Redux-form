@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "https://christianhamamdjian.github.io/Integrify-assignment-14-14-6-2018/",
   "dependencies": {
-    "gh-pages": "^2.0.1",
     "@types/react-redux": "^6.0.3",
+    "gh-pages": "^2.0.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
