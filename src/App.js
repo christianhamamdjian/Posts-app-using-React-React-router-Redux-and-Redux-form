@@ -8,7 +8,7 @@ import PostList from "./PostList";
 import EditPost from "./EditPost";
 
 const NotFound = () => {
-  return <h2> The page was not found </h2>;
+  return <PostList />;
 };
 
 class App extends Component {
