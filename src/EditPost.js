@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./App.css";
+import Button from "@material-ui/core/Button";
 import { connect } from "react-redux";
 
 class EditPost extends Component {
@@ -73,10 +74,10 @@ class EditPost extends Component {
             onChange={e => this.changeContent(e.target.value)}
           />
 
-          <button type="submit">Update</button>
+          <Button type="submit">Update</Button>
 
           <NavLink to="/">
-            <button>Cancel</button>
+            <Button>Cancel</Button>
           </NavLink>
         </form>
       </div>

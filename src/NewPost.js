@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./App.css";
 import { connect } from "react-redux";
-import { Field, reduxForm } from "redux-form";
+import { Field, reduxForm, change } from "redux-form";
+import * as Datetime from "react-datetime";
+// import "./react-datetime.css";
+import Button from "@material-ui/core/Button";
+import { makeStyles } from "@material-ui/core/styles";
 
 const validate = values => {
   const errors = {};
@@ -44,6 +48,12 @@ const renderTextArea = ({ input, meta: { touched, error, warning } }) => (
     </div>
   </div>
 );
+// const handleDate = date => {
+//   // this.setState({ date });
+//   console.log(date._d.toISOString());
+//   const newDate = date._d.toISOString();
+//   change("eventDate".date);
+// };
 class NewPost extends Component {
   handleSave = e => {
     e.preventDefault();
@@ -53,8 +63,16 @@ class NewPost extends Component {
     this.props.onSubmit(payload);
     this.props.history.push("/");
   };
-
+  useStyles = () =>
+    makeStyles(theme => ({
+      margin: {
+        margin: theme.spacing(2)
+      }
+    }));
   render() {
+    const classes = this.useStyles();
+    console.log(validate);
+
     return (
       <div className="container">
         <form onSubmit={this.handleSave}>
@@ -82,10 +100,15 @@ class NewPost extends Component {
             label="Write a new post"
           />
 
-          <button type="submit">Save</button>
+          {/* <label htmlFor="dateAndTime">Date And Time</label>
+          <Datetime name="dateAndTime" onChange={handleDate} /> */}
+
+          <Button type="submit" disabled={this.validate}>
+            Save
+          </Button>
 
           <NavLink to="/">
-            <button>Cancel</button>
+            <Button>Cancel</Button>
           </NavLink>
         </form>
       </div>

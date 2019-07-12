@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./App.css";
 
 import NewPost from "./NewPost";
 import SinglePost from "./SinglePost";
 import PostList from "./PostList";
 import EditPost from "./EditPost";
+
+import "./App.css";
 
 const NotFound = () => {
   return <PostList />;

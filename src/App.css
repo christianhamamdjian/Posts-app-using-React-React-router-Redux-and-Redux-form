@@ -1,58 +1,20 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
 #my-blog {
   color: #000;
 }
 .container {
   text-align: left;
 }
-label {
-  display: block;
-  text-align: left;
+.MuiAppBar-root {
+  margin-bottom: 40px;
 }
-input {
-  display: block;
+.MuiButton-root {
+  margin: 10px !important;
 }
-button {
-  display: block;
-}
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 body {
   font-family: sans-serif, Arial;
-  max-width: 960px;
   margin: 0 auto;
-  color: #f8f8f8;
-  background-color: #173869;
+  color: #000000;
+  background-color: #ffffff;
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -73,14 +35,14 @@ h4 {
 }
 p {
   font-size: 0.8em;
-  color: #dfdfdf;
+  color: #000000;
 }
 a {
   text-decoration: none;
-  color: #d5d6d8;
+  color: #7b9bdb;
 }
 a:hover {
-  color: #ffcba3;
+  color: #00b0cf;
 }
 .clearfix {
   clear: both;
@@ -94,25 +56,35 @@ hr {
 .header {
   text-align: center;
 }
+.MuiButton-root {
+  color: rgba(255, 255, 255, 0.87) !important;
+  background-color: rgba(0, 119, 255, 0.87) !important;
+}
 button {
-  background-color: #1eb4ef;
-  border: 1px solid #a4a9af;
-  color: #5d6164;
+  background-color: #02b2f8;
+  /* border: 1px solid #a4a9af; */
+  color: #c2c2c2;
   padding: 20px 60px;
   font-size: 0.9em;
   font-weight: 600;
   margin-top: 40px;
+  display: block;
+  cursor: pointer;
 }
 button:hover {
-  background-color: #fd7b7b;
-  border: 1px solid transparent;
+  background-color: #00b0cf !important;
 }
 label {
   font-size: 0.9em;
-  color: #dfdfdf;
+  color: #000000;
   float: left;
   margin: 20px 0px;
   width: 100%;
+  display: block;
+  text-align: left;
+}
+input {
+  display: block;
 }
 .input-full {
   width: 100%;
@@ -128,17 +100,17 @@ label {
 }
 ::placeholder {
   font-size: 1em;
-  color: #b1b5bb;
+  color: #8f8f8f;
 }
 input[type="text"] {
   font-size: 0.9em;
-  background-color: #454d57;
+  background-color: #ffffff;
   border-top: 1px solid transparent;
   border-right: 1px solid transparent;
   border-left: 1px solid transparent;
-  border-bottom: 1px solid #90979e;
+  border-bottom: 1px solid #000000;
   margin-top: 40px;
-  color: #dfdfdf;
+  color: #000000;
   outline: none;
 }
 input[type="number"] {
@@ -229,7 +201,7 @@ input[type="radio"] {
 }
 input[type="radio"] + label {
   font-size: 0.9em;
-  color: #dfdfdf;
+  color: #000000;
   border-bottom: 1px solid #90979e;
   float: left;
   margin-left: 0px;
@@ -251,18 +223,6 @@ input[type="radio"]:checked + label {
 }
 .checkboxes-block {
   margin-top: 40px;
-}
-.button {
-  background-color: transparent;
-  border: 1px solid #a4a9af;
-  color: #666769;
-  padding: 20px 60px;
-  font-size: 0.9em;
-  margin-top: 40px;
-}
-.button:hover {
-  background-color: #1eb4ef;
-  border: 1px solid transparent;
 }
 
 .invalid {
@@ -287,4 +247,7 @@ li {
   background: #1eb4ef;
   color: #fff;
   padding: 20px;
+}
+.jss6 {
+  padding-top: 56.25%;
 }
